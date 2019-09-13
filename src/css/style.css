@@ -244,7 +244,18 @@ h1, h2, h3, h4 {
   padding: 40px 40px 0 40px;
 }
 
+.hardhat{
+  position:absolute;
+  top:-20px;
+  left:25%;
+  z-index:2;
+  height:200px;
+  width:200px;
+}
 
+.dan{
+  position:relative;
+}
 
 .team .member-photo img {
   transition: all 0.6s ease 0s;
@@ -409,12 +420,6 @@ footer .footer-copyright p{
 	Mobile (Portrait) Design for a width of 320px
 ==============================================================*/
 @media only screen and (max-width: 767px) {
-  .team .team-member .member-content h3{
-    font-size: 24px;
-  }
-  .team .team-member .member-content p{
-    font-size: 14px;
-  }
   .navigation.sticky-header .navbar-toggle {
     border: 1px solid #dedede;
   }
@@ -490,6 +495,7 @@ footer .footer-copyright p{
     min-height: 750px;
   }
 }
+
 
 /*============================================================
 	Mobile (Landscape) Design for a width of 480px
