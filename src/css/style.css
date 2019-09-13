@@ -385,7 +385,7 @@ footer .footer-copyright p{
 }
 
 @media (min-width: 700px) and (max-width: 767px) {
-  .col-sm-4{
+  .col-sm-6{
     width: 33.33333333%;
     padding: 2px;
   }
