@@ -7,8 +7,9 @@ body {
 }
 
 p {
-  font-family: "helvetica", sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #fff;
+  line-height:1.5;
   font-size: 20px;
 }
 
@@ -55,6 +56,7 @@ h1, h2, h3, h4 {
 }
 
 .contact-form{
+  min-height: calc(100vh - 41px);
   background-size: cover;
   color: #fff;
   position: relative;
@@ -78,7 +80,7 @@ h1, h2, h3, h4 {
 
 .hero-area {
   background-size: cover;
-  height: 50vh;
+  min-height: 650px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,14 +120,6 @@ h1, h2, h3, h4 {
   margin-bottom: 20px;
 }
 
-#leader{
-  height: 60vh;
-}
-
-#team{
-  height:120vh;
-}
-
 .dark-bg {
   background: rgba(0, 0, 0, 0.7);
   height: 100%;
@@ -141,9 +135,6 @@ h1, h2, h3, h4 {
 }
 .page-404 p{
   color: #000;
-}
-#contact{
-  height:94vh;
 }
 
 /*=================================================================
@@ -316,43 +307,16 @@ h1, h2, h3, h4 {
 /*=================================================================
   Footer section
 ==================================================================*/
-.footer {
-  text-align: center;
-  background-color: #fff;
-  border-top: 1px solid #2c2c2c;
+footer .footer-copyright{
+	background-color: #1b1b1b;
+	padding-top:3px;
+	padding-bottom:3px;
+	text-align: center;
 }
 
-.footer h5 {
-  font-size: 12px;
-  line-height: 1;
-  color: #000;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.footer h6 {
-  font-size: 11px;
-  line-height: 15px;
-  color: #000;
-  font-weight: 400;
-  text-transform: capitalize;
-  letter-spacing: 2px;
-}
-
-.footer-nav{
-  padding:15px;
-  color: #fff;
-  font-size: 14px;
-  line-height: 26px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: .2s ease-in-out 0s;
-  border-top: 1px solid #2c2c2c;
-}
-
-.footer a {
-  color: #28ABE3;
+footer .footer-copyright p{
+	margin:10px;
+  font-size: 10px;
 }
 
 .page-404 {
@@ -393,12 +357,15 @@ h1, h2, h3, h4 {
   .navigation.sticky-header .navbar-nav > li > a {
     padding: 16px 9px;
   }
-  .hero-area {
-    height: 60vh;
-  }
     /* our team */
     #team{
-      height:180vh;
+      display:flex;
+    }
+    .team .team-member .member-content h3{
+      font-size: 24px;
+    }
+    .team .team-member .member-content p{
+      font-size: 14px;
     }
     .team-mate {
       margin-bottom: 30px;
@@ -417,28 +384,44 @@ h1, h2, h3, h4 {
     }
 }
 
+@media (min-width: 700px) and (max-width: 767px) {
+  .col-sm-4{
+    width: 33.33333333%;
+    padding: 2px;
+  }
+}
+
 /*============================================================
 	Tablet (Portrait) Design for a width of 768px
 ==============================================================*/
-@media (min-width: 768px) and (max-width: 979px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .navbar-inverse .navbar-nav li a {
     padding: 20px 10px;
   }
   .hero-area {
-    height: 80vh;
+    min-height: 550px;
+  }
+  .container {
+    width: 98%;
   }
 }
 /*============================================================
 	Mobile (Portrait) Design for a width of 320px
 ==============================================================*/
 @media only screen and (max-width: 767px) {
+  .team .team-member .member-content h3{
+    font-size: 24px;
+  }
+  .team .team-member .member-content p{
+    font-size: 14px;
+  }
   .navigation.sticky-header .navbar-toggle {
     border: 1px solid #dedede;
   }
   .navigation.sticky-header .navbar-toggle span {
     background: #000;
   }
-  .navigation.sticky-header .navbar-nav > li > a {
+  .navigation .navbar-nav > li > a {
     padding: 8px 90px;
   }
   .navigation .navbar-toggle {
@@ -449,7 +432,7 @@ h1, h2, h3, h4 {
   }
   .navbar {
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.06);
-    background: #fff !important;
+    background: #fff;
   }
   
   .navbar .navbar-nav > li > a {
@@ -488,14 +471,23 @@ h1, h2, h3, h4 {
     width: 100%;
   }
   .hero-area {
-    height: 60vh;
+    min-height: 650px;
     padding: 100px 0 0 0;
   }
-  #mission-statement{
-    height: 120vh;
+  .hero-area .block h1{
+    margin-left:0;
+  }
+  .col-md-12{
+    padding:0;
   }
   #mission-statement .block p{
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  .hero-area{
+    min-height: 750px;
   }
 }
 
@@ -530,7 +522,5 @@ h1, h2, h3, h4 {
     text-align: center;
     border-bottom: 2px solid transparent;
   }
-  .hero-area {
-    height: 80vh;
-  }
+
 }

@@ -7,7 +7,9 @@
 <!--<![endif]-->
 
 <head>
+  <!-- REMOVE WHEN DONE -->
   <meta name="robots" content="noindex">
+
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="NY general Wholesale" content="">
   <title>New York General Wholesale</title>
@@ -15,6 +17,9 @@
   <!-- Mobile Specific Meta
   ================================================== -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport"
+    content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi" />
+
 
   <!-- CSS
   ================================================== -->
@@ -55,7 +60,6 @@ Fixed Navigation
           <li><a href="index.html">Home</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="about.html">About Us</a></li>
-          <li><a href="resources.html">Resources</a></li>
           <li><a href="contact.html">Contact us</a></li>
           </li>
         </ul>
@@ -66,8 +70,6 @@ Fixed Navigation
   <!--
 End Fixed Navigation
  -->
-  <div class="parallax-window" data-parallax="scroll"
-    data-image-src="/nygeneral/src/assets/images/mission-statement.jpeg">
 
     <!-- Product Catalogue
  ==================================== 
@@ -87,7 +89,8 @@ End Fixed Navigation
     <!--
   Supply Solutions
   ==================================== -->
-    <section class="hero-area section">
+    <section class="hero-area section parallax-window" data-parallax="scroll"
+    data-image-src="./assets/images/Sitemap-Services-SupplySolutions.jpeg">
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
@@ -104,7 +107,8 @@ End Fixed Navigation
     Flexible Payment Plans
 		==================================== -->
 
-    <section class="hero-area section-sm">
+    <section class="hero-area section-sm parallax-window" data-parallax="scroll"
+    data-image-src="./assets/images/Sitemap-Services-FlexiblePaymentPlans.jpeg">
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
@@ -116,30 +120,21 @@ End Fixed Navigation
         </div>
       </div>
     </section>
-    </div>
 
-    <footer>
-      <div class="container">
-        <!-- main nav -->
-        <nav class="collapse navbar-collapse navbar-right">
-          <ul id="nav" class="nav navbar-nav menu">
-            <li class="dropdown">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="contact.html">Click here to contact us today!</a></li>
-            </li>
-          </ul>
-        </nav>
-        <!-- /main nav -->
+  <!-- Footer -->
+  <footer>
+
+      <div class="footer-copyright">
+          <p>© 2019 NY General Wholesale</p>
       </div>
+  
     </footer>
-
+    <!-- Footer -->
+  
     <!-- 
-    Essential Scripts
-    =====================================-->
-
+      Essential Scripts
+      =====================================-->
+  
     <!-- Main jQuery -->
     <script src="plugins/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap 3.4 -->
@@ -152,7 +147,7 @@ End Fixed Navigation
     <script src="js/script.js"></script>
     <!-- Rellax -->
     <script src="plugins/parallax/parallax.js"></script>
-
-</body>
-
-</html>
+  
+  </body>
+  
+  </html>
